@@ -9,7 +9,7 @@ def check_password_strength(password):
         return "Weak: Password must include at least one uppercase letter."
     if not any(char.islower() for char in password):
         return "Weak: Password must include at least one lowercase letter."
-    if not re.search(r'[!@#$%^&*(),. ?":{} |<>]', password):
+    if not re.search(r'[^a-zA-Z0-9]', password):
         return "Medium: Add special characters to make your password stronger."
     return "Strong: Your password is secure!"
 
