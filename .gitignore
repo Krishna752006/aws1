@@ -46,3 +46,13 @@ sudo systemctl start apache2 mysql
 1' union select column_name,2 from information_schema.columns where table_name = 'users'-- -
 1' select user,password from users-- -
 document.cookie
+
+docker run -d -p 8090:3000 --name juiceshop bkimminich/juice-shop
+admin@juice-sh.op, admin123
+nmap -sV [ip]
+
+echo "Cybersecurity Lab Evidence" > evidence.txt
+dd if=/dev/zero of=practice_disk.dd bs=1M count=100
+mkfs.ext4 practice_disk.dd
+sudo autopsy
+ls -lh /home/kali/disk_image.dd
