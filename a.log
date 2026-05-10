@@ -1,34 +1,23 @@
 cd /var/log
-last 
-journalctl | less
 journalctl | grep "Failed"
 journalctl | grep ssh
 journalctl | grep -i error
 
 
-
 Apache Log Analys
 
-cd /var/log/apache2 ls
+cd /var/log/apache2
 sudo less access.log
 grep "404" /var/log/apache2/access.log
-less /var/log/dpkg.log
 sudo journalctl -f
 
 
-Finished phpsessionclean.service Finished systemdtmpfiles-clean.service
-
-kali : COMMAND=/usr/bin/less access.log kali :COMMAND=/usr/bin/journalctl -f
-
-xfconfd.service started
-
-sudo apt install openssh-server –y
+sudo apt install openssh-server -y
 sudo service ssh start
 ip a
-Sudo service ssh start
 
-run:ssh fakeuser@localhostORssh kali@localhost
-Enter wrong password multiple times (5–10 times)
+run:ssh fakeuser@localhost OR ssh kali@localhost
+Enter wrong password multiple times (5-10 times)
 
 journalctl | grep "Failed password"
 journalctl | grep "Failed password" | awk '{print $11}'

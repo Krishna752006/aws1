@@ -1,0 +1,59 @@
+sudo apt install nodejs npm -y
+sudo npm install -g nativefier
+nativefier https://web.whatsapp.com
+
+cd WhatsAppWeb-linux-x64
+./WhatsAppWeb
+
+1. Open browser in Kali
+2. Go to: https://reports.exodus-privacy.eu.org
+3. Search for WhatsApp
+
+Start Wireshark
+
+Select interface (eth0)
+Click Start Capture
+
+Send messages
+
+Use filters:
+tls
+dns
+
+
+PART 2: Privacy Audit of Facebook Website
+Step 1: Open Facebook
+https://www.facebook.com
+Search Burpsuite
+
+Step 3: Configure Proxy
+• IP: 127.0.0.1
+• Port: 8080
+In browser:
+• Settings → Network → Manual Proxy
+
+Step 4: Intercept Traffic
+.go to proxy
+• Turn Intercept ON
+• Reload Facebook
+
+Press F12 → Network tab
+Look for:
+• Ads
+• Analytics scripts
+• Third-party requests
+
+
+Step 3: Check Email Breach
+Go to:
+" https://haveibeenpwned.com
+Enter email → check breach status
+Analysis Points
+• Type of attack
+• Vulnerability
+• Data exposed
+• Prevention
+Observations
+• WhatsApp uses strong encryption
+• Facebook performs extensive tracking
+• Data breaches occur due to vulnerabilities

